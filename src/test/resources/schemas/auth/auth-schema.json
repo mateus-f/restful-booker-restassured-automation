@@ -1,0 +1,19 @@
+{
+  "definitions": {},
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "required": [
+    "token"
+  ],
+  "properties": {
+    "token": {
+      "title": "Token",
+      "type": "string",
+      "default": "",
+      "examples": [
+        "abc123"
+      ],
+      "pattern": "^.*$"
+    }
+  }
+}
