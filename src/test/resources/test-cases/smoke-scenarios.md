@@ -22,3 +22,14 @@ Então a API deve responder com o status code 201
 E o corpo da resposta deve conter o texto "Created"
 E o tempo de resposta deve ser inferior a 2 segundos
 ```
+
+## Booking
+
+### Listagem geral de IDs de reservas com sucesso
+
+``` gherkin
+Dado que existem reservas cadastradas no sistema
+Quando eu enviar uma requisição GET para o endpoint "/booking" sem nenhum filtro
+Então a API deve responder com o status code 200
+E deve retornar uma lista contendo os IDs das reservas
+```
